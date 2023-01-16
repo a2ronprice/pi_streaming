@@ -86,7 +86,7 @@ class StreamingHandler(SimpleHTTPRequestHandler):
 
 def stream():
     # open camera
-    with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
+    with picamera.PiCamera(resolution='480x640', framerate=24) as camera:
         # create buffer
         frame_buffer = FrameBuffer()
 
